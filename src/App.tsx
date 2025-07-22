@@ -17,47 +17,47 @@ const App = () => {
     {
       src: "https://seshasindiaprivatelimited.com/wp-content/uploads/2025/07/Plots-For-Marimalai-nagar-_-Grass-1024x768.webp",
       title: "Grass Ground",
-      description: "Well-maintained green spaces throughout the community"
+      description: "Lush green grass areas within the community"
     },
     {
       src: "https://seshasindiaprivatelimited.com/wp-content/uploads/2025/07/Street-Lights-1024x768.webp",
       title: "Street Lights",
-      description: "Well-lit roads ensuring safety and security"
+      description: "LED street lighting for 24/7 safety"
     },
     {
       src: "https://seshasindiaprivatelimited.com/wp-content/uploads/2025/07/ground-Water-Connections-1024x768.webp",
-      title: "Ground Water Connections",
-      description: "Reliable water supply infrastructure"
+      title: "Water Connections",
+      description: "Ground water bore well connections"
     },
     {
       src: "https://seshasindiaprivatelimited.com/wp-content/uploads/2025/07/33-feet-roads--1024x768.webp",
-      title: "33 Feet Road",
-      description: "Wide concrete roads for easy accessibility"
+      title: "33 Feet Wide Roads",
+      description: "Concrete roads with proper drainage"
     },
     {
       src: "https://seshasindiaprivatelimited.com/wp-content/uploads/2025/07/Gated-Community--1024x768.webp",
       title: "Gated Community",
-      description: "Secure entrance with 24/7 security"
+      description: "Secured gated entrance with compound wall"
     },
     {
       src: "https://seshasindiaprivatelimited.com/wp-content/uploads/2025/06/386f4e0f-ad51-4013-8d9a-ee55cf8e8878-1024x768.jpeg",
-      title: "Ready for Construction",
-      description: "Plots ready for immediate construction"
+      title: "Plot Site View",
+      description: "Clear plots ready for construction"
     },
     {
       src: "https://seshasindiaprivatelimited.com/wp-content/uploads/2025/07/Plots-for-Sale-in-Maraimalai-nagar.svg",
-      title: "Site Layout Plan",
-      description: "Detailed layout of the MM City project"
+      title: "MM City Layout Plan",
+      description: "Official DTCP approved layout plan"
     },
     {
       src: "https://seshasindiaprivatelimited.com/wp-content/uploads/2025/06/86c7db33-e1be-4b2e-b820-8ab476c34ed8-768x432.jpeg",
-      title: "Project Overview",
-      description: "Complete view of the development"
+      title: "Aerial Site View",
+      description: "Complete project aerial view"
     },
     {
       src: "https://seshasindiaprivatelimited.com/wp-content/uploads/2025/06/153A5538-768x512.jpg",
-      title: "Site Development",
-      description: "Latest construction progress"
+      title: "Development Progress",
+      description: "Current site development status"
     }
   ];
 
@@ -279,7 +279,7 @@ const App = () => {
 
             {/* Contact Form - Fixed Width for Desktop */}
             <div className="bg-gray-50 p-6 lg:p-8 rounded-xl shadow-lg">
-              <div className="max-w-md mx-auto lg:max-w-lg">
+              <div className="w-full max-w-2xl mx-auto">
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">For enquiry:</h3>
                 <form className="space-y-4">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -735,81 +735,64 @@ const App = () => {
       </section>
 
       {/* Minimal Footer */}
-      <footer className="bg-gray-900 text-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <footer className="bg-gray-900 text-white py-8">
+        <div className="container mx-auto px-4">
+          {/* Main Footer Content */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
             {/* Company Info */}
-            <div className="lg:col-span-2">
+            <div className="sm:col-span-2 lg:col-span-1">
               <img 
                 src="https://seshasindiaprivatelimited.com/wp-content/uploads/2024/03/cropped-Seshass-india-logo-1-1-1.png" 
                 alt="Seshas India" 
-                className="h-10 mb-4 brightness-0 invert"
+                className="h-8 mb-3 brightness-0 invert"
               />
-              <p className="text-gray-300 text-sm mb-4">
-                Your gateway to affordable and luxurious housing solutions in Chennai's fastest-growing suburbs.
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Premium DTCP approved plots in Chennai's growing suburbs.
               </p>
-              <div className="flex space-x-4">
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                  <span className="sr-only">Facebook</span>
-                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
-                  </svg>
-                </a>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                  <span className="sr-only">Instagram</span>
-                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.004 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C3.828 14.394 3.172 12.81 3.172 11.011s.656-3.383 1.954-4.68c1.297-.808 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c1.297 1.297 1.954 2.88 1.954 4.68s-.657 3.383-1.954 4.68c-.875.807-2.026 1.297-3.323 1.297z"/>
-                  </svg>
-                </a>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                  <span className="sr-only">YouTube</span>
-                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                  </svg>
-                </a>
-              </div>
             </div>
 
             {/* Quick Links */}
             <div>
-              <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
+              <h4 className="font-semibold mb-3 text-sm">Links</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="#" className="text-gray-300 hover:text-white transition-colors">About Us</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Properties</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Contact Us</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Blogs</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">About</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Properties</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
               </ul>
             </div>
 
-            {/* Contact Info */}
+            {/* Contact */}
             <div>
-              <h3 className="font-semibold text-lg mb-4">Contact</h3>
-              <div className="space-y-3 text-sm">
-                <div className="flex items-start">
-                  <MapPin className="h-4 w-4 mt-1 mr-2 flex-shrink-0" />
-                  <span className="text-gray-300">No.1, MP Ave, Velayutham Colony, Saligramam, Chennai, Tamil Nadu 600093</span>
+              <h4 className="font-semibold mb-3 text-sm">Contact</h4>
+              <div className="space-y-2 text-sm">
+                <div className="flex items-center">
+                  <Phone className="h-3 w-3 mr-2 flex-shrink-0" />
+                  <a href="tel:+919042004359" className="text-gray-400 hover:text-white transition-colors">+91 90420 04359</a>
                 </div>
                 <div className="flex items-center">
-                  <Phone className="h-4 w-4 mr-2 flex-shrink-0" />
-                  <a href="tel:+918925011184" className="text-gray-300 hover:text-white transition-colors">+91 89250 11184</a>
+                  <Mail className="h-3 w-3 mr-2 flex-shrink-0" />
+                  <a href="mailto:info@seshasindiaprivatelimited.com" className="text-gray-400 hover:text-white transition-colors text-xs">info@seshasindiaprivatelimited.com</a>
                 </div>
-                <div className="flex items-center">
-                  <Mail className="h-4 w-4 mr-2 flex-shrink-0" />
-                  <a href="mailto:info@seshasindiaprivatelimited.com" className="text-gray-300 hover:text-white transition-colors">info@seshasindiaprivatelimited.com</a>
-                </div>
+              </div>
+            </div>
+
+            {/* Location */}
+            <div>
+              <h4 className="font-semibold mb-3 text-sm">Location</h4>
+              <div className="flex items-start">
+                <MapPin className="h-3 w-3 mt-1 mr-2 flex-shrink-0" />
+                <span className="text-gray-400 text-xs leading-relaxed">
+                  Maraimalai Nagar, Chennai
+                </span>
               </div>
             </div>
           </div>
 
           {/* Bottom Bar */}
-          <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">
+          <div className="border-t border-gray-800 pt-4 text-center">
+            <p className="text-gray-500 text-xs">
               © 2025 Seshas India Private Limited. All rights reserved.
             </p>
-            <div className="flex space-x-4 mt-4 sm:mt-0">
-              <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
-              <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
-            </div>
           </div>
         </div>
       </footer>
