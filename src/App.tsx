@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, Mail, MapPin, CheckCircle, Star, Menu, X, Clock, Users, Award, Shield, Home, Building, Car, Zap, TreePine, GraduationCap, Hospital, Train, ChevronDown, ChevronUp, MessageCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, CheckCircle, Star, Menu, X, Clock, Users, Award, Shield, Home, Building, Car, Zap, TreePine, GraduationCap, Guitar as Hospital, Train, ChevronDown, ChevronUp, MessageCircle } from 'lucide-react';
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
