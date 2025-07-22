@@ -413,9 +413,9 @@ Message: ${data.message || 'No additional message'}`;
 
             {/* PROFESSIONAL FORM WIDTH - FIXED! */}
             <div className="bg-gray-50 p-6 lg:p-8 rounded-xl shadow-lg">
-              <div className="w-full max-w-lg mx-auto">
+              <div className="w-full max-w-2xl mx-auto"> {/* INCREASED WIDTH FROM max-w-md TO max-w-2xl */}
                 <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Get Expert Consultation</h3>
-                <form onSubmit={handleFormSubmit} className="space-y-4">
+                <form onSubmit={handleFormSubmit} className="space-y-6"> {/* INCREASED SPACING */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -494,7 +494,7 @@ Message: ${data.message || 'No additional message'}`;
                         Submitting...
                       </>
                     ) : (
-                      'Get Free Consultation'
+                      'Send Message & Get Free Consultation'
                     )}
                   </button>
                 </form>
@@ -932,64 +932,64 @@ Message: ${data.message || 'No additional message'}`;
       {/* MINIMAL RESPONSIVE FOOTER - COMPLETELY REDESIGNED */}
       <footer className="bg-gray-900 text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
             
-            {/* Company Info */}
-            <div className="lg:col-span-1">
+            {/* Company Info - Mobile First */}
+            <div className="col-span-1 md:col-span-2 lg:col-span-1 text-center md:text-left">
               <img 
                 src="https://seshasindiaprivatelimited.com/wp-content/uploads/2024/03/cropped-Seshass-india-logo-1-1-1.png" 
                 alt="Seshas India" 
-                className="h-12 mb-4 brightness-0 invert"
+                className="h-12 mx-auto md:mx-0 mb-4 brightness-0 invert"
               />
-              <p className="text-gray-300 text-sm mb-6">
-                DTCP approved plots in Maraimalai Nagar with 90% loan facility.
+              <p className="text-gray-300 text-sm mb-6 max-w-xs mx-auto md:mx-0">
+                Your gateway to affordable housing in Chennai's fastest-growing suburbs.
               </p>
             </div>
 
-            {/* Quick Links */}
-            <div>
-              <h3 className="font-semibold mb-4">Quick Links</h3>
+            {/* Quick Links - Mobile Optimized */}
+            <div className="text-center md:text-left">
+              <h3 className="font-semibold text-lg mb-4 text-white">Quick Links</h3>
               <ul className="space-y-3 text-sm">
                 <li><a href="#" className="text-gray-300 hover:text-white transition-colors">About Us</a></li>
                 <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Properties</a></li>
                 <li><a href="#" className="text-gray-300 hover:text-white transition-colors">MM City</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Blogs</a></li>
               </ul>
             </div>
 
-            {/* Contact Info */}
-            <div>
-              <h3 className="font-semibold mb-4">Contact</h3>
+            {/* Contact Info - Mobile Friendly */}
+            <div className="text-center md:text-left">
+              <h3 className="font-semibold text-lg mb-4 text-white">Contact</h3>
               <div className="space-y-3 text-sm">
-                <div className="flex items-center">
-                  <Phone className="h-4 w-4 mr-2" />
+                <div className="flex items-center justify-center md:justify-start">
+                  <Phone className="h-4 w-4 mr-2 flex-shrink-0" />
                   <a href="tel:+919042004359" className="text-gray-300 hover:text-white transition-colors">+91 90420 04359</a>
                 </div>
-                <div className="flex items-center">
-                  <Mail className="h-4 w-4 mr-2" />
-                  <a href="mailto:info@seshasindiaprivatelimited.com" className="text-gray-300 hover:text-white transition-colors">info@seshasindia.com</a>
+                <div className="flex items-center justify-center md:justify-start">
+                  <Mail className="h-4 w-4 mr-2 flex-shrink-0" />
+                  <a href="mailto:info@seshasindiaprivatelimited.com" className="text-gray-300 hover:text-white transition-colors">info@seshas.com</a>
                 </div>
-                <div className="flex items-start">
-                  <MapPin className="h-4 w-4 mt-1 mr-2" />
-                  <span className="text-gray-300">Maraimalai Nagar, Chennai</span>
+                <div className="flex items-start justify-center md:justify-start">
+                  <MapPin className="h-4 w-4 mt-1 mr-2 flex-shrink-0" />
+                  <span className="text-gray-300 text-xs max-w-xs">Chennai, Tamil Nadu</span>
                 </div>
               </div>
             </div>
 
-            {/* CTA Section */}
-            <div>
-              <h3 className="font-semibold mb-4">Get Started</h3>
+            {/* CTA Section - Mobile Optimized */}
+            <div className="text-center md:text-left">
+              <h3 className="font-semibold text-lg mb-4 text-white">Get Started</h3>
               <div className="space-y-3">
                 <button 
                   onClick={openWhatsApp}
-                  className="w-full bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center justify-center"
+                  className="w-full md:w-auto bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center justify-center"
                 >
                   <MessageCircle className="w-4 h-4 mr-2" />
                   WhatsApp
                 </button>
                 <button 
                   onClick={makeCall}
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center justify-center"
+                  className="w-full md:w-auto bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center justify-center"
                 >
                   <Phone className="w-4 h-4 mr-2" />
                   Call Now
@@ -998,8 +998,8 @@ Message: ${data.message || 'No additional message'}`;
             </div>
           </div>
 
-          {/* Bottom Bar */}
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center">
+          {/* Minimal Bottom Bar */}
+          <div className="border-t border-gray-800 mt-8 pt-6 text-center">
             <p className="text-gray-400 text-sm">
               © 2025 Seshas India Private Limited. All rights reserved.
             </p>
