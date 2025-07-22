@@ -279,7 +279,7 @@ const App = () => {
 
             {/* Contact Form - Fixed Width for Desktop */}
             <div className="bg-gray-50 p-6 lg:p-8 rounded-xl shadow-lg w-full">
-              <div className="w-full max-w-none lg:max-w-lg xl:max-w-xl mx-auto">
+              <div className="w-full max-w-none lg:max-w-3xl mx-auto">
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">For enquiry:</h3>
                 <form className="space-y-4">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -737,29 +737,29 @@ const App = () => {
       {/* Minimal Footer */}
       <footer className="bg-gray-900 text-white py-8">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="flex flex-col items-center space-y-4 md:flex-row md:justify-between md:space-y-0">
             {/* Company Logo and Info */}
-            <div className="flex flex-col items-center md:items-start">
+            <div className="flex flex-col items-center md:items-start text-center md:text-left">
               <img 
                 src="https://seshasindiaprivatelimited.com/wp-content/uploads/2024/03/cropped-Seshass-india-logo-1-1-1.png" 
                 alt="Seshas India" 
                 className="h-8 mb-2 brightness-0 invert"
               />
-              <p className="text-gray-400 text-xs text-center md:text-left">
+              <p className="text-gray-400 text-xs">
                 © 2025 Seshas India Private Limited
               </p>
             </div>
             
             {/* Contact Info */}
-            <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-sm">
+            <div className="flex flex-col items-center space-y-2 text-sm md:flex-row md:space-y-0 md:space-x-6">
               <a href="tel:+919042004359" className="flex items-center text-gray-400 hover:text-white transition-colors">
                 <Phone className="h-4 w-4 mr-2" />
                 +91 90420 04359
               </a>
               <a href="mailto:info@seshasindiaprivatelimited.com" className="flex items-center text-gray-400 hover:text-white transition-colors">
                 <Mail className="h-4 w-4 mr-2" />
-                <span className="hidden sm:inline">info@seshasindiaprivatelimited.com</span>
-                <span className="sm:hidden">Email Us</span>
+                <span className="hidden md:inline">info@seshasindiaprivatelimited.com</span>
+                <span className="md:hidden">Email Us</span>
               </a>
             </div>
           </div>
